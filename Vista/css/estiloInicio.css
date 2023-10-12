@@ -1,0 +1,126 @@
+
+.contendorInventario {
+    width: 90%;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.contenedorGeneralBases {
+    width: 30%;
+}
+
+.conteBases {
+    padding: 20px;
+    background: #ffffff;
+    height: 400px;
+    overflow: auto;
+}
+
+.lupa img{
+    width: 25px;
+}
+
+h2 {
+    color: #363535;
+    padding: 5px;
+    border-bottom: 2px solid;
+}
+
+.conteBases::-webkit-scrollbar {
+    /*     background:#7f5353; */
+    width: 7px;
+    height: 10px;
+}
+#thead{
+    background: #FF3F3F;
+    color: #FFF;
+}
+.conteBases::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: red;
+}
+
+.container::-webkit-scrollbar {
+    /*     background:#7f5353; */
+    width: 7px;
+    height: 10px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: red;
+}
+
+.contenedorTabla {
+    margin-left: 5px;
+    width: 80%;
+}
+
+.container {
+    padding: 20px;
+    background: #ffffff;
+    height: 400px;
+    overflow: auto;
+}
+
+.contendorInventario {
+    display: flex;
+}
+
+.btn-base {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    background: #fdfdfd;
+    margin: 5px;
+    font-size: 17px;
+    color: #515050;
+    border: 1px solid ;
+    cursor: pointer;
+    border-radius: 5px ;
+}
+
+.btn-base a{
+    color: #515050;
+    text-decoration: none;
+}
+
+.btn-base:hover {
+    background: red;
+    transition: .7s;
+    color: white;
+}
+.btn-base a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1004px) {
+    .container {
+        width: 100%;
+    }
+
+    .contendorInventario {
+        display: block;
+    }
+
+    .contenedorGeneralBases {
+        width: 100%;
+    }
+
+    .conteBases {
+        width: 100%;
+        display: inline-flex;
+        height: 115px;
+    }
+
+    .btn-base {
+        display: inline-block;
+    }
+
+    .contenedorTabla {
+        width: 100%;
+    }
+}
+
+/*--------------------------------------------------------------------------*/

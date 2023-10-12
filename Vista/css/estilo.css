@@ -1,0 +1,92 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    background: url('../img/halliburton.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.conteForm {
+    background: #ffffffb8;
+    max-width: 500px;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    margin-top:12%;
+}
+
+.conteForm h2 {
+    font-size: 30px;
+    color:#3e3c3c;
+}
+
+.conteInput {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.conteInput span {
+    font-size: 25px;
+    color: #828282;
+}
+
+.conteInput input {
+    width: 75%;
+    background: none;
+    outline: none;
+    font-size: 20px;
+    border: 0;
+    color: #c70000;
+    border-bottom: 1.5px solid ;
+}
+.conteInput input:focus {
+    
+    color: #ab0000;
+
+}
+
+.conteInput span, .conteInput input {
+    padding: 10px;
+}
+
+.btn {
+    padding:10px;
+    outline: none;
+    padding:10px 20px;
+    font-size:18px;
+    border:1px;
+    cursor:pointer;
+    color:#fff;
+    border-radius:5px;
+}
+
+.btn-gris {
+    background:#7a7a7b;
+
+}
+
+.btn-gris:hover {
+    background:#404042;
+
+}
+.conteForm a{
+    color:#020096;
+    text-decoration:none;
+}
+.conteForm a:hover{
+    text-decoration:underline;
+}
+
+.input-group-append button{
+   height: 90%;
+   width: 70%;
+
+}
+.input-group-append span{
+   margin-left: -40%;
+
+}

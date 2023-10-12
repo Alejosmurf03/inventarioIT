@@ -1,0 +1,14 @@
+.prettyLoader {
+	background: url(/gic/jquery/imagenes/prettyLoader.png) top left no-repeat;
+	height: 60px;
+	position: absolute;
+	width: 60px;
+	z-index: 30000;
+}
+
+.prettyLoader img {
+	display: block;
+	margin: 7px 0 0 7px;
+}
+
+.pl_ie6 { background-image: url(/gic/jquery/imagenes/prettyLoader.gif); }

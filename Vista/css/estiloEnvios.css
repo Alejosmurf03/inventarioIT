@@ -1,0 +1,145 @@
+#margen{
+    border: 2px solid #000;
+    border-radius: 15px;
+    padding: 2%;
+}
+#con1{
+    padding-bottom: 3%;
+    margin-top: 40px;
+}
+
+#div{
+    border: 2px solid #000;
+    border-radius: 15px;
+}
+#tabla{
+    padding-top: 30px;
+}
+#div1{
+    padding-top: 20px;
+}
+#con2{
+    padding-top: 4%;
+    margin-top: 60px;
+}
+
+#thead td{
+    border: 1px solid #000;
+}
+#tbody td{
+    border: 1px solid #000;
+}
+#observacion{
+    height:100px;
+}
+#tabla1{
+    border: 2px solid #000;
+}
+#thead{
+    background: #FF3F3F;
+    color: #FFF;
+}
+#margenbtn{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+#a1{
+    text-decoration: none;
+    color: #FFF;
+}
+#btnrec{
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(120deg,#000,#ff0000,#000);
+    background-size: 200%;
+    color: #FFF;
+    outline: none;
+    cursor: pointer;
+    transition: .9s;
+}
+#btnrec:hover{
+    background-position: right;
+    color: #FFF;
+}
+#AgregarEnvio{
+    display: flex;
+    width: 50%;
+    height: 50px;
+    justify-content: center;
+    transition: 1s;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    outline-color: #000000;
+    background: #FFF;
+    color: #000000
+}
+#AgregarEnvio:hover{
+    display: flex;
+    width: 50%;
+    height: 50px;
+    justify-content: center;
+    transition: 1s;
+    border: 1px solid #ff0000;
+    border-radius: 15px;
+    outline-color: #ff0000;
+    background: #ff0000;
+    color: #FFF;
+}
+#BTN1{
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: 1s;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    outline-color: #000000;
+    background: #FFF;
+    color: #000000
+}
+
+#BTN1:hover{
+    transition: 1s;
+    border: 1px solid #D23939;
+    border-radius: 15px;
+    outline-color: #D23939;
+    background: #D23939;
+    color: #FFF;
+}
+
+#grfs{
+    margin-bottom: 10px;
+}
+
+input, #elim{
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 990px) {
+    #btnrec{
+        width: 100%;
+        height: 50px;
+        border: none;
+        background: linear-gradient(120deg,#313131,#ff0000,#353535);
+        background-size: 200%;
+        color: #FFF;
+        margin-top: 2%;
+        cursor: pointer;
+
+        transition: .5s;
+    }
+    #con1{
+        padding-bottom: 3%;
+        margin-top: 4%;
+
+    }
+    #con2{
+        padding-top: 4%;
+        margin-top: 4%;
+    }
+}

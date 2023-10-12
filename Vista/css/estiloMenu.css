@@ -1,0 +1,311 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19-ago-2019, 14:32:17
+    Author     : Tania Losada
+*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 60px;
+    height: 70px;
+    box-sizing: border-box;
+    -webkit-transition: .5s;
+    transition: .5s;
+    z-index: 1000;
+    background: #ff0000;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease-out;
+}
+
+.contenedorNavAprendiz {
+    width: 100%;
+    margin: auto;
+    height: 50px;
+}
+.contenedorNavAprendiz a{
+    text-decoration: none;
+}
+
+header .logo {
+    color: #ffffff;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    float: left;
+    font-weight: bold;
+}
+
+.imgLogo {
+    width: 50px;
+    float: left;
+    margin-right: 10px;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+header nav ul li a {
+    background: transparent;
+    border: 2px solid #00000000;
+    color: #ffffff;
+    padding: 10px 11px;
+    text-decoration: none !important;
+    display: block;
+    margin-top: 5px;
+    /*  text-transform: uppercase; */
+    transition: .5s;
+    margin: 4px;
+}
+
+header nav ul li a:hover {
+    color: #ffffff;
+    transition: .5s;
+    background: #d43131;
+}
+
+.menu-toggle {
+    color: #fff;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+header nav ul ul{
+    display:none;
+    position:absolute;
+    min-width:220px;
+     color: #000;
+}
+#menu ul li:hover ul{
+    display:block; 
+    position: absolute;  
+    transition: .5s;
+    background: #ff0000; 
+   
+    
+}
+#menu ul ul{
+   display:none;
+    color: #fff;
+}
+
+header .iniciarSesion:hover, header.black .iniciarSesion:hover {
+    background: #4fc3f7;
+    color: #ffffff;
+    border: 2px solid #4fc3f7;
+}
+
+.itemResponsive {
+    display: none;
+}
+
+#menu a span{
+        position: absolute;
+        margin-top: 5px;
+    }
+
+@media screen and (max-width: 956px) {
+    header, header.black {
+        padding: 5px 20px;
+        background: #ff0000;
+        height: 60px;
+    }
+
+    .contenedorNavAprendiz {
+        width: 100%;
+        /*     background:blue; */
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .itemResponsive {
+        display: block;
+    }
+
+    header.black .logo, header .logo {
+        color: #ffffff;
+        padding: 0px;
+        font-size: 24px;
+        margin-left: 0px;
+    }
+
+    header.black .imgLogo, header .imgLogo {
+        width: 55px;
+        float: left;
+    }
+   
+
+    header nav {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 50px);
+        background: #000000de;
+        top: 60px;
+        left: -100%;
+        transition: 0.5s;
+    }
+
+    .active {
+        left: 0;
+        /*         se utiliza para la que aparezca el menu de responsive */
+    }
+
+    header nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    header nav ul li a, header.black ul li a {
+        border: none;
+        /*         border-bottom: 1px solid #a5a5a5 ; */
+        padding: 10px;
+        margin: 0px;
+        color: white;
+    }
+
+    .activo, header .iniciarSesion:hover, header.black .iniciarSesion:hover, header nav ul li a:hover, header.black ul li a:hover {
+        background: #ff0000;
+        color: #ffffff;
+        border: 0px;
+        border-radius: 0px;
+    }
+    
+    #menu ul li:hover ul{
+    display:none;
+    position: static;
+        
+}
+    #menu a span{
+        position: absolute;
+        margin-top: 5px;
+        color: #ffffff;
+        
+    }
+}
+
+/*disenio para el panel del usuaurio*/
+@media (max-width: 956px) {
+    #ContePanelUsuarioDesp {
+        display: none;
+    }
+}
+
+#ContePanelUsuarioDesp {
+    z-index: 1000;
+    width: 120px;
+    margin-top: -2px;
+    cursor:pointer;
+    text-align: right;
+}
+
+
+#btnActivarPanel {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 10px 10px 0px 0px;
+    padding: 0px 15px;
+    cursor: pointer;
+    margin-top: 17px;
+
+
+}
+#btnActivarPanel label{
+    cursor: pointer;
+}
+.panelUsuario {
+    
+    width: 100%;
+    -webkit-box-shadow: 0px 0px 5px 0px rgb(89, 89, 89);
+    -moz-box-shadow: 0px 0px 5px 0px rgb(89, 89, 89);
+    box-shadow: 0px 0px 5px 0px rgb(89, 89, 89);
+    text-align: right;
+    background: #ffffff;
+    border-radius: 10px;
+    color: #fff;
+}
+
+#contenedorOpcionesPanel a {
+    text-decoration: none;
+}
+
+#contenedorOpcionesPanel .btnOpcion {
+    padding: 10px;
+    text-align: right;
+    color: #00000082;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+#contenedorOpcionesPanel .btnOpcion:hover {
+    background: #ff0000;
+    color: #fff;
+}
+.toggle {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%-50%);
+    margin-top: 10px;
+}
+
+.toggle span {
+    position: relative;
+    width: 36px;
+    height: 4px;
+    background: #ffffff;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    transition: .5s;
+}
+
+.toggle span:nth-child(1) {
+    transform-origin: left;
+}
+
+.toggle span:nth-child(2) {
+    transform-origin: center;
+}
+
+.toggle span:nth-child(3) {
+    transform-origin: left;
+}
+
+.toggle.activad span:nth-child(1) {
+    transform: rotate(40deg);
+    left: -5px;
+}
+
+.toggle.activad span:nth-child(2) {
+    transform: rotate(315deg);
+    right: 10px;
+}
+
+.toggle.activad span:nth-child(3) {
+    transform: scaleX(0);
+}

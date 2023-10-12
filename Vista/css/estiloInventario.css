@@ -1,0 +1,40 @@
+#con1{
+    padding-bottom: 3%;
+    margin-top: 80px;
+    padding-top: 40px;
+}
+h2 {
+    color: #646464;
+    padding: 10px;
+    border-bottom: 2px solid;
+    width: 100%;
+}
+#tabla1{
+    border: 2px solid #000;
+}
+#thead{
+    background: #FF3F3F;
+    color: #FFF;
+}
+
+#div{
+    border: 2px solid #000;
+    border-radius: 15px;
+}
+#div1{
+    padding-top: 20px;
+}
+#tabla{
+    padding-top: 30px;
+}
+#thead td{
+     border: 1px solid #000;
+}
+#tbody td{
+     border: 1px solid #000;
+}
+
+.ver img{
+    width: 8%;
+    margin-left: 50%;
+}
